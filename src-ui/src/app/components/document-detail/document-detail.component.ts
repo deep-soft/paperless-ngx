@@ -34,6 +34,7 @@ import {
   debounceTime,
   distinctUntilChanged,
   filter,
+  tap,
 } from 'rxjs/operators'
 import { DocumentSuggestions } from 'src/app/data/document-suggestions'
 import {
@@ -422,14 +423,13 @@ export class DocumentDetailComponent
 
           return this.isDirty$.pipe(
             takeUntil(this.unsubscribeNotifier),
-            map((dirty) => ({ doc, dirty }))
+            tap((dirty) => {
+              this.openDocumentService.setDirty(doc, dirty)
+            })
           )
         })
       )
       .subscribe({
-        next: ({ doc, dirty }) => {
-          this.openDocumentService.setDirty(doc, dirty)
-        },
         error: (error) => {
           this.router.navigate(['404'], {
             replaceUrl: true,
@@ -634,11 +634,14 @@ export class DocumentDetailComponent
           // in case data changed while saving eg removing inbox_tags
           this.documentForm.patchValue(docValues)
           this.store.next(this.documentForm.value)
+          this.openDocumentService.setDirty(this.document, false)
           this.toastService.showInfo($localize`Document saved successfully.`)
-          close && this.close()
           this.networkActive = false
           this.error = null
-          this.openDocumentService.refreshDocument(this.documentId)
+          close &&
+            this.close(() =>
+              this.openDocumentService.refreshDocument(this.documentId)
+            )
         },
         error: (error) => {
           this.networkActive = false
@@ -693,12 +696,13 @@ export class DocumentDetailComponent
       })
   }
 
-  close() {
+  close(closedCallback: () => void = null) {
     this.openDocumentService
       .closeDocument(this.document)
       .pipe(first())
       .subscribe((closed) => {
         if (!closed) return
+        if (closedCallback) closedCallback()
         if (this.documentListViewService.activeSavedViewId) {
           this.router.navigate([
             'view',
