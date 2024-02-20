@@ -4577,21 +4577,21 @@
         </context-group>
         <target state="final">Warnung: das Ändern des Tokens kann nicht rückgängig gemacht werden</target>
       </trans-unit>
-      <trans-unit id="8935717557476105185" datatype="html">
+      <trans-unit id="8935717557476105185" datatype="html" approved="yes">
         <source>Connected social accounts</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/common/profile-edit-dialog/profile-edit-dialog.component.html</context>
           <context context-type="linenumber">59</context>
         </context-group>
-        <target state="translated">Verbundene Drittanbieterkonten</target>
+        <target state="final">Verbundene Drittanbieterkonten</target>
       </trans-unit>
-      <trans-unit id="8383227756109993898" datatype="html">
+      <trans-unit id="8383227756109993898" datatype="html" approved="yes">
         <source>Set a password before disconnecting social account.</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/common/profile-edit-dialog/profile-edit-dialog.component.html</context>
           <context context-type="linenumber">63</context>
         </context-group>
-        <target state="translated">Legen Sie vor der Trennung eines Drittanbieterkontos ein Kennwort fest.</target>
+        <target state="final">Legen Sie vor der Trennung eines Drittanbieterkontos ein Kennwort fest.</target>
       </trans-unit>
       <trans-unit id="2907016025519254862" datatype="html" approved="yes">
         <source>Disconnect</source>
@@ -4601,29 +4601,29 @@
         </context-group>
         <target state="final">Trennen</target>
       </trans-unit>
-      <trans-unit id="5322995394400578831" datatype="html">
+      <trans-unit id="5322995394400578831" datatype="html" approved="yes">
         <source>Disconnect <x id="INTERPOLATION" equiv-text="{{ account.name }}"/> social account</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/common/profile-edit-dialog/profile-edit-dialog.component.html</context>
           <context context-type="linenumber">71</context>
         </context-group>
-        <target state="translated">Drittanbieterkonto <x id="INTERPOLATION" equiv-text="{{ account.name }}"/> trennen</target>
+        <target state="final">Drittanbieterkonto <x id="INTERPOLATION" equiv-text="{{ account.name }}"/> trennen</target>
       </trans-unit>
-      <trans-unit id="649824314893051979" datatype="html">
+      <trans-unit id="649824314893051979" datatype="html" approved="yes">
         <source>Warning: disconnecting social accounts cannot be undone</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/common/profile-edit-dialog/profile-edit-dialog.component.html</context>
           <context context-type="linenumber">81</context>
         </context-group>
-        <target state="translated">Warnung: Die Trennung von Drittanbieterkonten kann nicht rückgängig gemacht werden</target>
+        <target state="final">Warnung: Die Trennung von Drittanbieterkonten kann nicht rückgängig gemacht werden</target>
       </trans-unit>
-      <trans-unit id="1375396510511350122" datatype="html">
+      <trans-unit id="1375396510511350122" datatype="html" approved="yes">
         <source>Connect new social account</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/common/profile-edit-dialog/profile-edit-dialog.component.html</context>
           <context context-type="linenumber">86</context>
         </context-group>
-        <target state="translated">Mit neuem Drittanbieterkonto verbinden</target>
+        <target state="final">Mit neuem Drittanbieterkonto verbinden</target>
       </trans-unit>
       <trans-unit id="6141884091799403188" datatype="html" approved="yes">
         <source>Emails must match</source>
@@ -4665,13 +4665,13 @@
         </context-group>
         <target state="final">Fehler beim Generieren des Authentifizierungstokens</target>
       </trans-unit>
-      <trans-unit id="4153637646944982460" datatype="html">
+      <trans-unit id="4153637646944982460" datatype="html" approved="yes">
         <source>Error disconnecting social account</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/common/profile-edit-dialog/profile-edit-dialog.component.ts</context>
           <context context-type="linenumber">210</context>
         </context-group>
-        <target state="translated">Fehler beim Trennen des Drittanbieterkontos</target>
+        <target state="final">Fehler beim Trennen des Drittanbieterkontos</target>
       </trans-unit>
       <trans-unit id="3797570084942068182" datatype="html" approved="yes">
         <source>Select</source>

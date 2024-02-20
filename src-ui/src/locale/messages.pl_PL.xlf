@@ -74,7 +74,7 @@
           <context context-type="linenumber">13</context>
         </context-group>
         <note priority="1" from="description">Currently selected slide number read by screen reader</note>
-        <target state="translated"> Przesuń <x id="INTERPOLATION"/> z <x id="INTERPOLATION_1"/> </target>
+        <target state="translated"> Slajd <x id="INTERPOLATION"/> z <x id="INTERPOLATION_1"/> </target>
       </trans-unit>
       <trans-unit id="ngb.timepicker.hours" datatype="html">
         <source>Hours</source>
